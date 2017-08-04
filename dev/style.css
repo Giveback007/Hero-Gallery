@@ -7,12 +7,7 @@ body {
 .hero__main {
  background-color: white;
  height: 100vh;
- display: -webkit-box;
- display: -webkit-flex;
- display: -ms-flexbox;
  display: flex;
- -webkit-flex-wrap: wrap;
- -ms-flex-wrap: wrap;
  flex-wrap: wrap;
  background: black;
 }
@@ -27,8 +22,6 @@ body {
  position: absolute;
  left: 50%;
  top: 50%;
- -webkit-transform:  translate(-50%,-50%);
- -ms-transform:  translate(-50%,-50%);
  transform:  translate(-50%,-50%);
  text-shadow: 0 0 1px black;
 }
@@ -40,8 +33,6 @@ body {
 
 .hero__div {
  margin: auto;
- -webkit-transition: background-image 1.2s ease;
- -o-transition: background-image 1.2s ease;
  transition: background-image 1.2s ease;
 }
 

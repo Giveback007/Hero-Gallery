@@ -16,7 +16,10 @@ function heroDivFill() {
       rand = randNumGen(arr.length);
     }
     inUse.push(rand);
-    heroDivs[i].style = "background: url('" + arr[rand] + "'); background-size: cover; background-position: 50% 25%;";
+    heroDivs[i].style.backgroundImage = "url(" + arr[rand] + ")";
+    heroDivs[i].style.backgroundSize = "cover";
+    heroDivs[i].style.backgroundPosition = "50% 25%";
+    console.log(i);
   }
 }
 heroDivFill();
@@ -33,7 +36,8 @@ function chngRandHeroDiv() {
     rand = randNumGen(arr.length);
   }
   inUse[div] = rand;
-  heroDivs[div].style = "background: url('" + arr[rand] + "'); background-size: cover; background-position: 50% 25%;";
+  heroDivs[div].style.backgroundImage = "url(" + arr[rand] + ")";
+  console.log(div);
 }
 
 setInterval(function () {
